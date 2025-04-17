@@ -6,6 +6,8 @@
 }
 
 .header {
+    position: relative;
+    z-index: 2;
     background: var(--header-bg-color);
 
     @include abstracts.screen(lg) {
@@ -84,7 +86,7 @@
     }
 
     @include abstracts.screen(sm) {
-        inset: 0 0 20% 0;
+        inset: 0 20% 0 0;
     }
 
     &__close-btn {
